@@ -5,22 +5,14 @@
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int n = 97;
-	int m = 65;
-	
-	while (n <= 122)
-	{
-		putchar(n);
-		n++;
-	}
+	int ch;
 
-	while (m <= 90)
-	{
-		putchar(m);
-		m++;
-	}
-	return(0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+	putchar('\n');
+	return (0);
 }
